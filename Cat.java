@@ -26,10 +26,6 @@ public class Cat {
         super();
     }
 
-    public void voice() {
-        System.out.println("Мр-рррррррр");
-    }
-
     public String getName() {
         return name;
     }
@@ -84,6 +80,10 @@ public class Cat {
 
     public void setFood(String food) {
         this.food = food;
+    }
+    
+     public void voice() {
+        System.out.println("Мр-рррррррр");
     }
 
     @Override
