@@ -12,6 +12,7 @@ public class Cat {
     private String food;
 
     public Cat(String name, String breed, String color, String sex, int age, double weight, String food) {
+        super();
         this.name = name;
         this.breed = breed;
         this.color = color;
@@ -22,9 +23,10 @@ public class Cat {
     }
 
     public Cat() {
+        super();
     }
 
-    void voice() {
+    public void voice() {
         System.out.println("Мр-рррррррр");
     }
 
