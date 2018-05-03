@@ -11,7 +11,8 @@ public class Cat {
     private double weight;
     private String food;
 
-    public Cat(String name, String breed, String color, String sex, int age, double weight, String food) {
+    public Cat(String name, String breed, String color, String sex, int age,
+            double weight, String food) {
         super();
         this.name = name;
         this.breed = breed;
@@ -81,14 +82,16 @@ public class Cat {
     public void setFood(String food) {
         this.food = food;
     }
-    
-     public void voice() {
+
+    public void voice() {
         System.out.println("Мр-рррррррр");
     }
 
     @Override
     public String toString() {
-        return "Cat{" + "name=" + name + ", breed=" + breed + ", color=" + color + ", sex=" + sex + ", age=" + age + ", weight=" + weight + ", food=" + food + '}';
+        return "Cat{" + "name=" + name + ", breed=" + breed
+                + ", color=" + color + ", sex=" + sex + ", age=" + age +
+                ", weight=" + weight + ", food=" + food + '}';
     }
-    
+
 }
