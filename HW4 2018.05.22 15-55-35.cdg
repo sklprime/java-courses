@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HW4">
+  <ClassDiagramComponents>
+    <Class name="Group" package="hw4.pkg1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="studentArr" type="Student[]" visibility="private"/>
+        <Field name="nameGroup" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nameGroup"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNameGroup" returnType="String" visibility="public"/>
+        <Method name="setNameGroup" returnType="void" visibility="public">
+          <Argument type="String" name="nameGroup"/>
+        </Method>
+        <Method name="addStudentInter" returnType="void" visibility="public"/>
+        <Method name="addStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="student"/>
+        </Method>
+        <Method name="searchStudent" returnType="Student" visibility="public">
+          <Argument type="String" name="surname"/>
+        </Method>
+        <Method name="deleteStudent" returnType="boolean" visibility="public">
+          <Argument type="int" name="number"/>
+        </Method>
+        <Method name="sort" returnType="void" visibility="private"/>
+        <Method name="compareStudent" returnType="int" visibility="private">
+          <Argument type="Student" name="a"/>
+          <Argument type="Student" name="b"/>
+        </Method>
+        <Method name="sortByParametr" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="sortByParametr" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+          <Argument type="boolean" name="forward"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="private"/>
+        <Method name="getName" returnType="String" visibility="private">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getSex" returnType="boolean" visibility="private">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getZach" returnType="long" visibility="private">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getRecrut" returnType="Student[]" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Human" package="hw4.pkg1" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="surname" type="String" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+        <Field name="sex" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="int" name="age"/>
+          <Argument type="boolean" name="sex"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getSurname" returnType="String" visibility="public"/>
+        <Method name="setSurname" returnType="void" visibility="public">
+          <Argument type="String" name="surname"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="isSex" returnType="boolean" visibility="public"/>
+        <Method name="setSex" returnType="void" visibility="public">
+          <Argument type="boolean" name="sex"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HW41" package="hw4.pkg1" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MyException" package="hw4.pkg1" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMessage" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Prizuv" package="hw4.pkg1" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Methods>
+        <Method name="getRecrut" returnType="Student[]" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Student" package="hw4.pkg1" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="nOfZach" type="long" visibility="private"/>
+        <Field name="group" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="surname"/>
+          <Argument type="int" name="age"/>
+          <Argument type="boolean" name="sex"/>
+          <Argument type="long" name="nOfZach"/>
+          <Argument type="String" name="group"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getnOfZach" returnType="long" visibility="public"/>
+        <Method name="setnOfZach" returnType="void" visibility="public">
+          <Argument type="long" name="nOfZach"/>
+        </Method>
+        <Method name="getGroup" returnType="String" visibility="public"/>
+        <Method name="setGroup" returnType="void" visibility="public">
+          <Argument type="String" name="group"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="StudentSort" package="hw4.pkg1" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="i" type="int" visibility="private"/>
+        <Field name="forward" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="i"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="i"/>
+          <Argument type="boolean" name="forward"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getI" returnType="int" visibility="public"/>
+        <Method name="setI" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="compare" returnType="int" visibility="public">
+          <Argument type="Object" name="a"/>
+          <Argument type="Object" name="b"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="hw4.pkg1.Prizuv" target="hw4.pkg1.Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="hw4.pkg1.Group" target="hw4.pkg1.Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="hw4.pkg1.Group" target="hw4.pkg1.Prizuv"/>
+    <IsRelation name="is" source="hw4.pkg1.Student" target="hw4.pkg1.Human"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
